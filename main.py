@@ -41,7 +41,7 @@ def check_for_updates():
     """Check for updates from GitHub repository"""
     try:
         response = requests.get(
-            "https://api.github.com/repos/Najmul190/Server-Cloner/releases/latest",
+            "https://api.github.com/repos/Najmul190/Discord-Server-Cloner/releases/latest",
             timeout=5,
         )
         if response.status_code == 200:
@@ -51,7 +51,7 @@ def check_for_updates():
                     f"\n[yellow]Update available: v{latest_version} (current: v{VERSION})[/yellow]"
                 )
                 console.print(
-                    "[dim]Download: https://github.com/Najmul190/Server-Cloner/releases/latest[/dim]\n"
+                    "[dim]Download: https://github.com/Najmul190/Discord-Server-Cloner/releases/latest[/dim]\n"
                 )
 
                 sleep(5)
