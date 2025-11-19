@@ -49,7 +49,8 @@ If you have any questions, need assistance or want news on updates, please join 
 -   Find one of the following headers: `"messages?limit=50"`, `"science"` or `"preview"` under `"Name"` and click on it
 -   Scroll down until you find `"Authorization"` under `"Request Headers"`
 -   Copy the value which is your token
--   **⚠️ Keep your token secret! Never share it with anyone, as it grants full access to your Discord account.**
+
+**⚠️ Keep your token secret! Never share it with anyone, as it grants full access to your Discord account.**
 
 ### 4. Run the tool
 - **Windows**: Simply double-click `run.bat` to start the tool.
