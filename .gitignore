@@ -3,6 +3,7 @@ bot-env/
 venv/
 env/
 ENV/
+Compressed/
 
 # Python bytecode
 __pycache__/

@@ -95,7 +95,7 @@ except Exception as e:
 if not os.path.exists("./config.json"):
     console.print("\n[cyan]═══ First Time Setup ═══[/cyan]\n")
     console.print(
-        "[yellow]⚠️ No config.json found. Let's set up your configuration.[/yellow]\n"
+        "[yellow]No config.json found. Let's set up your configuration.[/yellow]\n"
     )
 
     user_token = Prompt.ask("[bold]> Enter your Discord Token[/bold]")
@@ -192,7 +192,7 @@ async def clone_server():
 
         console.print("\n" + "─" * 120 + "\n")
         console.print(
-            "[bold yellow]⚠️  Please review the server information above carefully.[/bold yellow]"
+            "[bold yellow]Please review the server information above carefully.[/bold yellow]"
         )
         console.print("[dim]Press Enter to continue or Ctrl+C to cancel...[/dim]")
         input()
@@ -754,7 +754,7 @@ class ClonerBot:
             )
             if self.INPUT_GUILD_ID.isdigit() and len(self.INPUT_GUILD_ID) >= 10:
                 break
-            console.print("[yellow]⚠ Invalid Server ID.[/yellow]")
+            console.print("[yellow]Invalid Server ID.[/yellow]")
 
         sleep(0.3)
 
@@ -765,11 +765,11 @@ class ClonerBot:
             if self.GUILD.isdigit() and len(self.GUILD) >= 10:
                 if self.GUILD == self.INPUT_GUILD_ID:
                     console.print(
-                        "[yellow]⚠ Source and destination cannot be the same[/yellow]"
+                        "[yellow]Source and destination cannot be the same[/yellow]"
                     )
                     continue
                 break
-            console.print("[yellow]⚠ Invalid Server ID.[/yellow]")
+            console.print("[yellow]Invalid Server ID.[/yellow]")
 
         sleep(0.3)
         return self.INPUT_GUILD_ID, self.TOKEN, self.GUILD
